@@ -1,0 +1,9 @@
+<Alloy>
+	<Window class="container">	
+		<TableView id="table">
+			<HeaderView platform="android">
+				<Label id="header">Restaurant Inspection</Label>
+			</HeaderView>
+		</TableView>
+	</Window>
+</Alloy>

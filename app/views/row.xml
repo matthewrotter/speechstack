@@ -1,0 +1,5 @@
+<Alloy>
+	<TableViewRow>
+		<Label id="data" onClick="getScore"/>
+	</TableViewRow>
+</Alloy>
