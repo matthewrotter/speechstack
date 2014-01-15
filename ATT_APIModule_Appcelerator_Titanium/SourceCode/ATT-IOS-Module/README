@@ -1,0 +1,27 @@
+AT&T Appcelerator Titanium iPhone Module Project
+===========================================
+
+The AT&T Titanium Mobile SDK provides a simplified way for Titanium Mobile Developers to access the AT&T API platform services. By significantly reducing the complexity of building applications that use the AT&T platform services, the AT&T Titanium Mobile SDK helps developers quickly bring robust Titanium Mobile applications to market.
+
+The AT&T Titanium Modules provide interfaces that facilitate access to the following AT&T platform APIs:
+• SMS
+• MMS
+• SPEECH
+• IN-APP MESSAGING
+• NOTARY
+• PAYMENT
+• LOCATION
+• OAUTH
+
+
+
+
+INSTALL AT&T Titanium iPhone MODULE
+--------------------
+
+1. Run `build.py` which creates your distribution
+2. Install the module zip file into your Titanium mobile application, please refer "ATT Titanium Modules Installation Guide.docx" for more details.
+
+
+
+

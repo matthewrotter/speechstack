@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.3
+apiversion: 2
+description: AT&T API
+author: AT&T
+license: AT&T License
+copyright: Copyright (c) 2011-2013 by AT&T.
+
+
+# these should not be edited
+name: attmodule
+moduleid: ti.api.att
+guid: 1438e49f-bb23-4d22-af91-30bba9e0ac69
+platform: iphone
+minsdk: 2.1.2.GA

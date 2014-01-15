@@ -1,0 +1,65 @@
+BUILD YOUR MODULE
+---------------------
+
+1. Download the zip from Github.
+2. Unzip the downloaded zip.
+3. open the build.py in TextEditor and set the Titanium SDK Path of your machine.
+4. Edit the license and manifest for module configuration and packaging.
+
+INSTALL YOUR MODULE
+--------------------
+
+1. Run `build.py` which creates your distribution
+2. cd to `/Library/Application Support/Titanium`
+3. copy this zip file into the folder of your Titanium SDK
+
+REGISTER YOUR MODULE
+---------------------
+
+Register your module with your application by editing `tiapp.xml` and adding your module.
+Example:
+
+<modules>
+	<module platform="commonjs" version="1.0.1">att</module>
+</modules>
+
+When you run your project, the compiler will know automatically compile in your module
+dependencies and copy appropriate image assets into the application.
+
+USING YOUR MODULE IN CODE
+-------------------------
+
+
+1. To use your module in code, you will need to require it.
+
+For example,
+
+	var my_module = require('att');
+	my_module.ATT.SMS.sendSMS({
+		'accept' : 'application/json',
+		'contentType' : 'application/json',
+		'body' : {
+			"Message" : "put your message here",
+			"Address" : "tel:xxxxxxxxxx"
+		}
+
+	}, function(data) {
+		Ti.API.info('Success Callback:' + data);	
+	}, function(error) {
+		Ti.API.error('Error Callback:' + error);
+	});
+});
+
+2.  update the following entries in Tiapp.xml
+
+    <property name="accessKey">place your access key here</property>
+    <property name="secretKey">place your secret key here</property>
+    <property name="shortCode">place your short code here</property>
+    <property name="scope">place your Scope here</property>
+    <property name="amount">put your payment amount value</property>
+    <property name="description">put your payment description here</property>
+    <property name="paymentServerUrl">http://att.somee.com/ATTNotifications/</property>
+
+   a) Get the access key, secret Key, and short code from developer.att.com
+   b) scope value should be same as registered application at developer.att.com
+   c) update the paymentServerUrl value in Tiapp.xml with your own Payment server url.

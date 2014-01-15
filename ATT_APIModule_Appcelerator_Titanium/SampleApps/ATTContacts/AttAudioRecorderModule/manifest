@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0.0
+apiversion: 2
+description: My module
+author: David Becker
+license: Specify your license
+copyright: 2013 AT&T
+
+
+# these should not be edited
+name: attaudiorecorder
+moduleid: ti.api.att.audiorecorder
+guid: 028edfa3-eee1-4181-957a-77fa41b400aa
+platform: android
+minsdk: 2.1.2.GA

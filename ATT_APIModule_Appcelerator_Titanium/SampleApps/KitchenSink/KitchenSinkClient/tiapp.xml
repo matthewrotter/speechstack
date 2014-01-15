@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ti:app xmlns:ti="http://ti.appcelerator.org">
+    <deployment-targets>
+        <target device="tizen">false</target>
+        <target device="mobileweb">false</target>
+        <target device="iphone">true</target>
+        <target device="ipad">false</target>
+        <target device="android">true</target>
+        <target device="blackberry">false</target>
+    </deployment-targets>
+    <sdk-version>2.1.3.GA</sdk-version>
+    <id>com.att.developeratt</id>
+    <name>ATTTiKitchenSink</name>
+    <version>1.0</version>
+    <publisher>AT&amp;T API</publisher>
+    <url>http://developer.att.com</url>
+    <description>not specified</description>
+    <copyright>2013 by ATT</copyright>
+    <icon>appicon.png</icon>
+    <persistent-wifi>false</persistent-wifi>
+    <prerendered-icon>false</prerendered-icon>
+    <statusbar-style>default</statusbar-style>
+    <statusbar-hidden>false</statusbar-hidden>
+    <fullscreen>false</fullscreen>
+    <navbar-hidden>false</navbar-hidden>
+    <analytics>true</analytics>
+    <guid>85c4d3c3-f918-4265-aa43-d6017d4cc831</guid>
+    <property name="ti.ui.defaultunit">dip</property>
+    <iphone>
+        <orientations device="iphone">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+        </orientations>
+        <orientations device="ipad">
+            <orientation>Ti.UI.PORTRAIT</orientation>
+            <orientation>Ti.UI.UPSIDE_PORTRAIT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_LEFT</orientation>
+            <orientation>Ti.UI.LANDSCAPE_RIGHT</orientation>
+        </orientations>
+    </iphone>
+    <android xmlns:android="http://schemas.android.com/apk/res/android">
+        <manifest>
+            <supports-screens android:anyDensity="true"/>
+        </manifest>
+    </android>
+    <mobileweb>
+        <precache/>
+        <splash>
+            <enabled>true</enabled>
+            <inline-css-images>true</inline-css-images>
+        </splash>
+        <theme>default</theme>
+    </mobileweb>
+    <property name="accessKey">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</property>
+    <property name="secretKey">XXXXXXXXXXXXXXXX</property>
+    <property name="shortCode">XXXXXXXX</property>
+    <property name="scope">CMS,MMS,PAYMENT,SMS,SPEECH,STTC,TTS</property>
+    <property name="authScope">TL,IMMN,MIM</property>
+    <property name="merchantID">XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX</property>
+    <property name="amount">0.99</property>
+    <property name="description">Purchase</property>
+    <property name="paymentServerUrl">http://attdemo.somee.com/ATTNotifications/</property>
+    <property name="redirectUrl">http://attdemo.somee.com/AttNotifications/SuccessfulAuthentication.html</property>
+    <modules>
+        <module platform="commonjs">att</module>
+        <module platform="android">ti.api.att</module>
+        <module platform="iphone">ti.api.att</module>
+    </modules>
+</ti:app>

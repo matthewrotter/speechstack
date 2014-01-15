@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.1.1
+apiversion: 2
+description: AT&T API
+author: AT&T
+license: AT&T License
+copyright: Copyright (c) 2011-2013 by AT&T.
+
+
+# these should not be edited
+name: attmodule
+moduleid: ti.api.att
+guid: d1833065-5074-4f6d-a005-d2b9054a0e40
+platform: android
+minsdk: 2.1.2.GA
